@@ -1,0 +1,35 @@
+.box1{
+  border-left: 2px solid red;
+  box-shadow: 2px 1px 4px black;
+  font-size: 2rem;
+  padding: 20px;
+  width: fit-content;
+  margin: 20px;
+  transition: .3s;
+}
+.box2{
+  border-left: 2px solid green;
+  box-shadow: 2px 1px 4px black;
+  font-size: 2rem;
+  padding: 20px;
+  width: fit-content;
+  margin: 20px;
+  transition: .3s;
+}.box3{
+  border-left: 2px solid blue;
+  box-shadow: 2px 1px 4px black;
+  font-size: 2rem;
+  padding: 20px;
+  width: fit-content;
+  margin: 20px;
+  transition: .3s;
+}
+.box1:hover{
+  transform: scale(1.3, 1.3);
+}
+.box2:hover{
+  box-shadow: 1px 1px 9px black;
+}
+.box3:hover{
+  background-color: rgb(196, 184, 184);
+}

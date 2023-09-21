@@ -1,0 +1,100 @@
+*{
+  margin: 0px;
+}
+.fondo{
+  /*background-image: url(http://placekitten.com/200/300);/*Pone como fondo una imagen y la repite tantas veces sea necesario para abarcar tdo el ancho y alto del contendeor*/
+  /*background-repeat: no-repeat;/*--Aqui hacemos que no se repita la imagen*/
+  /*background-repeat: repeat-x;--Repite la imagen horizontalmente y solo si es necesario*/
+  /*background-repeat: repeat-y;--Repite la iamgen verticalemte y solo si es necesaroi*/
+  /*background-position: top, left;--Este es su valor por defecto, es decir que la imagen se posicionara       
+      arriba y a la derecha*/
+  /*background-attachment: fixed;/*Perimte que nuestro fondo este fijo*/
+  /*background-color: rgb(51, 230, 243, 0.5);/*Se supone que con esto damos color y transaprencia al fondo*/
+  /*background-size:auto;
+  /*Podemos usar todas las funciones de background color en una misma funcion, seria de esta manera*/
+  /*background: color, url(), repeat, position, attachment;  --/* esta es la sintaxis*/
+  font-size: 2rem;
+  padding: 20px;
+  line-height: 70px;
+  background-color: rgba(0,0,0,0.5);
+  background-color:hsla(219, 100%, 10%, 0.473); /*(hue, saturation, lightness, alpha) alpha es transparencia*/
+}
+
+.gradiantes{
+  font-size: 2rem;
+  /*background-image: linear-gradient(-180deg,blue, yellow, red, rgb(255, 0, 140), rgb(234, 250, 10), rgb(158, 143, 143), rgb(0, 255, 55), rgb(3, 3, 3));
+  /*direccion, color1, color(etc) y podemos combinar posiciones para hacer gradiante diagonal(to right bottom) y podemos usar angulos en grados tambein (-180deg)*/
+  background-image: repeating-linear-gradient(-45deg, rgb(97, 4, 55) 10%,rgb(107, 107, 0) 20%, rgb(6, 6, 133) 30%, rgb(143, 7, 7) 40%);
+  color: black;
+  text-shadow: 5px 5px 5px white;
+}
+
+body{
+  background-color: #495504;
+}
+.box{
+  margin: 10px;
+  font-size: 3rem;
+  padding: 10px;
+  box-shadow: 1px 2px 10px rgb(255, 255, 255);
+}
+.box p{
+  background-color: black;
+  color: white;
+  box-shadow: 1px 1px 8px white inset;/*INSET Sirve para darle sombra por dentro a nuestra caja*/
+  text-shadow: 2px 2px 8px white;
+  padding: 10px;
+  text-align: center;
+}
+
+.box1{
+  position: relative;
+  left: 200px;
+  top: 50px;
+  border: solid 2px black;
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+  box-shadow: 2px 2px 8px black;
+  width: 100px;
+  height: 100px;
+  /*Solo se pueden usar cuando tienen un display: block ya sea por defecto o asignarselo*/
+  /*transform: rotate(-30deg);/*Rotacion de nuestro elemento*/
+  transform: rotatex(50deg);/*el elemento se acuesta*/
+  /*transform: rotatey(0);/*el elemento se voltea*/
+  /*transform: rotatez(-30deg);/*Rotacion del elemento*/
+  /*transform: translate(400px, 0px);/*Primer parametro eje x(horizontal) segundo parametro eje y(vertical)*/
+  /*transform: skewx(-10deg);
+  transform: skewY(-10deg);
+  transform: skew(-10deg, -10deg);/*Esta seria la forma de usar los dos ejes en una sola linea*/
+  
+}
+.box1:hover{
+  transform: scale(1.5, 1.5);/*Cuanto crecera en el eje X(horizontal) y cuanto en el eje Y()vertical */
+}
+
+.box2{
+  position: relative;
+  left: 700px;
+  top: -100px;
+  border: solid 2px black;
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+  box-shadow: 2px 2px 8px black;
+  width: 100px;
+  height: 100px;
+  transition: 2.3s;/*Con esta propiedad le estamos diciendo que todas las transiciones las haga despues de cierto tiempo, que en este caso son 2.3 segundos */
+  /*transition-delay: .5s;/*Sirve para retrasar la transicion por en cierto tiempo*/
+  /*transition: 1s 1s;/*En este ejemplo el primer valor es el tiempo en que hara la transicion mientras que el segundo valor es el tiempo que se retrasara*/
+}
+
+.box2:hover{
+  width: 300px;
+  transform: scale(2.5, 2.5);
+  background-color: blue;
+}

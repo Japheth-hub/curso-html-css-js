@@ -1,0 +1,11 @@
+body{
+  background-color: #eee;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 90px 50px 120px;
+
+}
+.element{
+  background-color: red;
+}

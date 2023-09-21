@@ -1,0 +1,258 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+}
+.contenedor{
+  background-color: blue;
+  margin: 0px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.p1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3rem;
+  color: beige;
+  text-transform: capitalize;
+  /*text-indent:20px = Sirve para colocar la indentacion (sangria) */
+  /*line-height: 20px; =Es el espacio que habra entre cada linea del parrafo */
+  /*word-spacing: 10px; =Espacio que tendra entre cada palabra del parrafo */
+  text-shadow: 2px 20px 6px black;/*desplazamiento horizontal/ desplazamiento vertical/ difuminacion(que tan borroso se ve /color de la sombra)*/
+  letter-spacing: 5px;/*Que tando espacio habra entre cada letra*/
+}
+.contenedor a{
+  font-size: 3rem;
+  color: blue;
+  text-decoration: none;
+  background-color: green;
+  padding: 10px;
+  border-radius: 7px;
+  margin: 20px;
+  width:fit-content;
+}
+.contenedor a:link{/*Estado normal del link(es cuando todavia no se la ha dado clic a ese enlace)*/
+  color: brown;
+}
+.contenedor a:visited{/*Es cuando el link ya ha sido visitado o ya se le haya dado clic al link*/
+  color: yellow;
+}
+.contenedor a:hover{/*Se ejecuta cuando el cursor estar por encima del enlace*/
+  color: red;
+  text-decoration: line-through;
+  background-color: aqua;
+}
+.contenedor a:active{/*Este es cuando se le esta dando clic al enlace, el efecto aplica mientras se mantenga el clic*/
+  color: black;
+  text-decoration: underline;
+  background-color: orangered;
+}
+.lista{
+  background-color: aqua;
+  display: block;
+  padding: 20px;
+  text-align: end;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.lista img{
+  width: 100px;
+  height: auto;
+  float: left;
+  position: relative;
+  left: 50px;
+  bottom: 7px ;
+  cursor: pointer;
+}
+ul{
+  /*display: flex;*/
+  list-style:none;
+  word-spacing: 10px;
+  margin-right: 150px;
+}
+ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+ul li{
+  display: inline-block;
+  border: solid 1px black;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 10px;
+  box-shadow: 5px 5px 5px black;
+  cursor: pointer;
+  
+}
+/*Usamos este selector (odd) para los elementos pares*/
+ul li:nth-child(odd){
+  background-color: rgb(228, 93, 93);
+}
+/*Este selector (even) es para los imapres*/
+ul li:nth-child(even){
+  background-color: rgb(255, 2, 2);
+}
+ul li:hover{
+  box-shadow: -1px -2px 5px black;
+  
+}
+
+
+.tabla{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding : 20px;
+  background-color: blueviolet;
+}
+table{
+  /*Con este valor (fit-content) podemos hacer que el contenedor se adapte a su contenido*/
+  width: fit-content;
+  border: solid 1px black;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+th{
+  background-color: black;
+  color: white;
+}
+
+/*OJO ESTOS VALORES SOLO SE USAN EN TABLAS*/
+/*Con este selector con esa propiedad podemos asignar una funcion en la tabala a los elementos pares*/
+tr:nth-child(2n){
+  background-color: red;
+}
+/*Y en este ejemplo hacemos los mismo pero a los impares*/
+tr:nth-child(2n+1){
+  background-color: rgb(240, 108, 108);
+}
+.parrafo{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  /*Comn este metodo hacemos que el contenedor alcanze un ancho maximo aunque su contenido sea mas grande no se expande*/
+  height: 100%;
+  max-width: 100px;
+  /*height: 500px;  Y en este caso adaptamos la altura a su contenido*/
+  /*position: static; Este es el valor predefinido de la propiedad position*/
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  /*display: none; Con esta funcioon hacemos que no se muetsre nuestro elemnto seleccionado*/
+}
+
+
+.over{
+  width: 400px;
+  height: 100px;
+  background-color: aqua;
+  /*Hasta aca el podemos ver que el contenido se sale de nuestra dimension*/
+  overflow: visible;/*Esta es el valor que viene por defecto*/
+  overflow: hidden;/*Y con este valor no dejmaos que sea visible lo que se sale de nuestro contenedor*/
+  overflow: scroll;/*Aui le aregamos el scroll para que podamos ver el contenido completo*/
+  overflow: auto;/*Este valor agrega en automatico el scroll solo si llegara a necesitar */
+  
+}
+
+/*Aquie estamos seleccionando elementos especificos, por ejemplo la clse .p2 y elemnto img*/
+.p2 img{
+  /*Con propiedad hacemos que nuestros elemntos floten a una direccion*/
+  float: left;
+  /*Significa la transparencia del elemnto y los valores son del 0 (totalmente transparente) y 1*/
+  opacity: .7;
+  width: 100px;
+  height: auto;
+}
+.p2 img:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.dropdown-btn{
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+
+}
+.dropdown-content{
+  display: none;
+  /*Esto hace referencia a que tendra una posicion de acuerdo a su elemnto padre*/
+  position: absolute;
+  background-color: aqua;
+  min-width: 160px;
+  box-shadow: 2px 8px 7px black;
+  
+}
+.dropdown-content a{
+  text-decoration: none;
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover{
+  background-color: blue;
+  color: white;
+}
+.dropdown-btn:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 3px -4px 8px black;
+}
+
+.form{
+  margin-top: 30px;
+  background-color: gray;
+  padding: 15px;
+  font-size: 1.5rem;
+  margin: 20px;
+  box-shadow: 2px 5px 4px black;
+  width: 70%;
+}
+input[type="text"]{
+  width: 70%;
+  display: block;
+  padding: 15px 20px;
+  margin: 8px 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"]{
+  background-color: greenyellow;
+  width: fit-content;
+  height: auto;
+  font-size: 2rem;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 5px 5px 4px black;
+}
+input[type="submit"]:hover{
+  box-shadow: -1px 1px 5px black;
+}
+
+
+
+
+

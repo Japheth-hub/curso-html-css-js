@@ -1,0 +1,170 @@
+*{
+	margin: 0px;
+}
+body{
+	background-color: yellow;	
+}
+.navbar-collapse{
+	display: flex;
+	width: 100%;
+	padding: 10px;
+	background-color: orange;
+	justify-content: space-between;
+	align-items: center;
+}
+.titulo{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: start;
+	color: darkblue;
+	
+	margin-left: 50px;
+}
+.titulo h1{
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+.titulo img{
+	width: 50px;
+	height: auto;
+	margin-right: 30px;
+}
+.enlace{
+	display: flex;
+	flex-direction: row;
+	margin-right: 30px;
+}
+.enlace p{
+	margin-right: 20px;
+	color: black;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.subtitulo{
+	margin: 10px;
+	text-align: center;
+	font-size: 3rem;
+	font-weight: bold;
+	background-color: yellow;
+	border-radius: 10px;
+
+}
+.carrusel{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#carouselExampleCaptions{
+	width: 900px;
+	height: auto;
+	margin: 20px;
+}
+.carousel-item{
+	background-color: ;
+}
+.d-block{
+	width: 100%;
+	height: 300px;
+	margin-bottom: 130px;
+	border-radius: 50%;
+}
+.carousel-caption h5, .carousel-caption p{
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: black;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+	background-color: black;
+}
+.carousel-indicators{
+	background-color: gray;
+}
+#productos{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: yellow;
+}
+#productos h3{
+	font-weight: bold;
+	font-size: 4rem;
+	color: black;
+	margin: 10px;
+}
+.lista{
+	display: flex;
+	flex-direction: column;
+	background-color: yellow;
+	font-size: 2rem;
+	padding: 10px;
+}
+#contacto{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: gold;
+	padding: 30px;
+
+}
+.contacto-box{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+#contacto h3{
+	margin: 30px;
+	font-size: 3rem;
+	font-weight: bold;
+}
+#contacto h6{
+	font-size: 1.2rem;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.pedidos, .sugerencias{
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	background-color: palegreen;
+	width: 500px;
+	height: 250px;
+	align-items: center;
+}
+.pedidos h4, .sugerencias h4{
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.pedidos p, .sugerencias p{
+	font-size: 2rem;
+	font-weight: bold;
+	color: darkblue;
+}
+#ubicacion{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: orange;
+}
+#ubicacion h3{
+	margin: 30px;
+	font-size: 3rem;
+	font-weight: bold;
+}
+#ubicacion h6{
+	font-size: 1.2rem;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+
+
+
